@@ -39,7 +39,8 @@ def three_feet_under():
     zipped_tuple = zip(number_of_days, days_in_a_week)
 
     print(f'Representation: {list(zipped_tuple)}')
-    print(f'''What's my Type? : {type(zipped_tuple)} and I belong to: {type(zipped_tuple).__module__}!''')
+    print(
+        f'''What's my Type? : {type(zipped_tuple)} and where do I belong to: {type(zipped_tuple).__module__}!''')
 
 
 def four_feet_under():
@@ -55,6 +56,34 @@ def four_feet_under():
     unziped_num_days, unzipped_days_week = zip(*zipped_tuple)
 
     print(f'Day: {unziped_num_days} and Name: {unzipped_days_week}')
+
+
+def can_iterate_set():
+    """
+    User to implement the method
+    """
+    pass
+
+
+def can_iterate_dict():
+    """
+    User to implement the method
+    """
+    pass
+
+
+def can_iterate_queue():
+    """
+    User to implement the method
+    """
+    pass
+
+
+def can_iterate_stack():
+    """
+    User to implement the method
+    """
+    pass
 
 
 if __name__ == '__main__':
