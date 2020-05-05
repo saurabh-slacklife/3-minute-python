@@ -2,6 +2,9 @@ __author__ = "Saurabh Saxena from 3-Minute Tech"
 
 
 def what_is_zip():
+    """
+        What is zip(), a data structure, class, an iterable?. Let's find out
+    """
     number_of_days = [1, 2, 3, 4, 5, 6, 7]
     days_in_a_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
@@ -39,8 +42,23 @@ def three_feet_under():
     print(f'''What's my Type? : {type(zipped_tuple)} and I belong to: {type(zipped_tuple).__module__}!''')
 
 
+def four_feet_under():
+    """
+        But how do I get the original tuple from zip, I mean how to unzip?
+
+        """
+    number_of_days = [1, 2, 3, 4, 5, 6, 7]
+    days_in_a_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+    zipped_tuple = zip(number_of_days, days_in_a_week)
+
+    unziped_num_days, unzipped_days_week = zip(*zipped_tuple)
+
+    print(f'Day: {unziped_num_days} and Name: {unzipped_days_week}')
+
+
 if __name__ == '__main__':
-    # what_is_zip()
-    # print('Executing two_breathe_down')
-    # two_breathe_down()
+    what_is_zip()
+    two_breathe_down()
     three_feet_under()
+    four_feet_under()
