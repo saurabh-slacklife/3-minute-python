@@ -33,29 +33,29 @@ def three_feet_under():
         And yes, remember don't believe what I say!
 
         """
-    number_of_days = [1, 2, 3, 4, 5, 6, 7]
+    number_of_days = [1, 2, 3, 4, 5, 6]
     days_in_a_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
     zipped_tuple = zip(number_of_days, days_in_a_week)
 
     print(f'Representation: {list(zipped_tuple)}')
-    print(
-        f'''What's my Type? : {type(zipped_tuple)} and where do I belong to: {type(zipped_tuple).__module__}!''')
+    print(f'''What's my Type? : {type(zipped_tuple)}''')
+    print(f'and where do I belong to: {type(zipped_tuple).__module__}!')
 
 
 def four_feet_under():
     """
         But how do I get the original tuple from zip, I mean how to unzip?
-
-        """
+    """
     number_of_days = [1, 2, 3, 4, 5, 6, 7]
     days_in_a_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
     zipped_tuple = zip(number_of_days, days_in_a_week)
 
-    unziped_num_days, unzipped_days_week = zip(*zipped_tuple)
+    unzipped_num_days, unzipped_days_week = zip(*zipped_tuple)
 
-    print(f'Day: {unziped_num_days} and Name: {unzipped_days_week}')
+    print(f'Day: {unzipped_num_days}')
+    print(f'Name: {unzipped_days_week}')
 
 
 def can_iterate_set():
